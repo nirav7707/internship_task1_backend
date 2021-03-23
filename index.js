@@ -16,6 +16,7 @@ mongoose.connect("mongodb+srv://Nirav:12345Qwert@cluster0.4c6sw.mongodb.net/crud
 
 app.use(express.json());
 app.use(cors());
+app.use("/",(req,res)=>{res.send("welcome to backend!")})
 app.use("/uploads",express.static("uploads"))
 app.use("/api/registration",registration_router);
 app.use("/api/login",login_router);
