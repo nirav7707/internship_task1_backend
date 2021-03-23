@@ -22,6 +22,6 @@ app.use("/api/registration",registration_router);
 app.use("/api/login",login_router);
 app.use("/api/articals",artical);
 
-app.listen(8888,()=>{
+app.listen(process.env.PORT || 8888,()=>{
     console.log("test")
 })
